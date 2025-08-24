@@ -6,6 +6,7 @@ class LoginPage:
         self.username_input = (By.XPATH, "//input[@data-qa='login-email']")
         self.password_input = (By.XPATH, "//input[@data-qa='login-password']")
         self.login_button = (By.XPATH, "//button[text()='Login']")
+        self.invalid_login_message = (By.XPATH, "//p[text()='Your email or password is incorrect!']")
 
     def enter_username(self, username):
         self.driver.find_element(*self.username_input).send_keys(username)
