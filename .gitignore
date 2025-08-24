@@ -1,5 +1,12 @@
 # Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
+*.py[cod]
+
+# Test credentials and local files
+test_data/test_users.json
+**/test_users.json
+login_auto.py
 *.py[codz]
 *$py.class
 
